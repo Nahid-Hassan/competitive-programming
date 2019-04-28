@@ -116,7 +116,26 @@ int main() {
         cout << "First match is " << *it1 << endl;
         cout << "Sequence {'A', 'B', 'C'} found at position: " << (it1 - myChar.begin()) << endl;
     }
-    
+
+    /**
+     fName    : adjacent_find()
+     Synopsis : template <class ForwardIterator>
+                ForwardIterator adjacent_find (ForwardIterator first, ForwardIterator last);
+     Return   : Searches the range [first,last) for the first occurrence of two consecutive 
+                elements that match, and returns an iterator to the first of these two elements, or last if no such pair is found. **/
+
+    int myint[] = {5, 20, 5, 30, 30, 20, 10, 10, 20};
+    vector<int> myNum(myint, myint + 8);
+
+    it = adjacent_find(myNum.begin(), myNum.end());
+    if(it != myNum.end()) {
+        cout << "The first pair of repeated elements are: " << *it << endl;
+    } 
+    it = adjacent_find(++it, myNum.end(), [](int a, int b) {return a == b;});
+    if (it != myNum.end()) {
+        cout << "The first pair of repeated elements are: " << *it << endl;
+    }
+
 
     return 0;
 }
