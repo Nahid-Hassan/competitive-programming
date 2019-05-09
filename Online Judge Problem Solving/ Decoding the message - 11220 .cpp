@@ -6,7 +6,6 @@ using namespace std;
 int input() {int n; cin >> n; return n;}
 
 int main() {
-    //input_file();
     int testCase = input();
     string s, s1;
     int casen = 0;
