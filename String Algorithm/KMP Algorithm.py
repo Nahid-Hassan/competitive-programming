@@ -1,3 +1,4 @@
+// Author: nahid.cseru@gmail.com
 def kmpSearch(txt, pat):
     txtSize = len(txt)
     patSize = len(pat)
