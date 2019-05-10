@@ -1,3 +1,4 @@
+// Author: nahid.cseru@gmail.com
 class KMP_Algorithm {
     void kmpSearch(String pat, String txt) {
         int txtSize = txt.lenght();
