@@ -1,4 +1,5 @@
 //Each letter is represented by its ASCII value. o means 1 and space means 0.
+//Help: Algorithmist
 #include <bits/stdc++.h>
 using namespace std;
 
