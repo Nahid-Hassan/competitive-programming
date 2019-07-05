@@ -5,6 +5,6 @@ using namespace std;
 
 int main() {
     //input_file();
-    
+   
     return 0;
 }

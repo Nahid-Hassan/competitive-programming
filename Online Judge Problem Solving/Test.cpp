@@ -1,10 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define input_file() {freopen("in.txt", "rt", stdin);}
+using ll = long long;
+int mx;
+
+void preprocess(int ) {
+
+}
 
 int main() {
-    //input_file();
     
+
     return 0;
 }
