@@ -16,6 +16,8 @@ int main() {
     mp.insert(pair<string, int>("one", 1));
     mp.insert(pair<string, int>("two", 2));
 
+    cout << mp["three"] << endl;
+
     mp1 = mp;
 
     for(it = mp.begin(); it != mp.end(); it++) {
