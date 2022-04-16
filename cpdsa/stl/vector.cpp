@@ -25,24 +25,41 @@ int main() {
     //     it++;
     // }
 
-    vector<vector<int>> nums2;
+    // vector<vector<int>> nums2;
 
-    // create nested loop
-    for (int i = 0; i < 3; i++) {
-        vector<int> nums3;
-        for (int j = 0; j < 3; j++) {
-            int a;
-            cin >> a;
-            nums3.push_back(a);
-        }
-        nums2.push_back(nums3);
-    }
+    // // create nested loop
+    // for (int i = 0; i < 3; i++) {
+    //     vector<int> nums3;
+    //     for (int j = 0; j < 3; j++) {
+    //         int a;
+    //         cin >> a;
+    //         nums3.push_back(a);
+    //     }
+    //     nums2.push_back(nums3);
+    // }
 
-    // print out the 2-d vector
-    for (int i = 0; i < nums2.size(); i++) {
-        for (int j = 0; j < nums2[i].size(); j++) {
-            cout << nums2[i][j] << " ";
-        }
-        cout << endl;
+    // // print out the 2-d vector
+    // for (int i = 0; i < nums2.size(); i++) {
+    //     for (int j = 0; j < nums2[i].size(); j++) {
+    //         cout << nums2[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // vector insert
+    vector <int> vec;
+    vec.push_back(10);
+    vec.push_back(20);
+    vec.push_back(30);
+    vec.push_back(40);
+
+    vector <int> :: iterator it;
+    it = vec.begin();
+
+    vec.insert(it+2, 23);
+
+    for(auto it : vec) {
+        cout << it << " ";
     }
+    cout << endl;
 }
