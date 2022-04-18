@@ -4,9 +4,9 @@ using namespace std;
 class Solution {
 public:
     vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
-        map<int, int> mp;
-        map<int, int>::iterator it = mp.begin();
         vector <int> sol;
+        multimap<int, int> mm;
+
         int count = 0;
         
         for (int i = 0; i < mat.size(); i++) {
@@ -15,12 +15,24 @@ public:
                     count++;
                 }
             }
-            mp[count]++;
+            mm.insert({ count, i });
             count = 0;
         }
-        
+        for (int i = 0; i < k; i++) {
+            sol.push_back(mm.begin()->second);
+            mm.erase(mm.begin());
+        }
+        return sol;
     }
 };
+
+/*
+[[1,1,0,0,0],
+ [1,1,1,1,0],
+ [1,0,0,0,0],
+ [1,1,0,0,0],
+ [1,1,1,1,1]], 
+ */
 
 int main() {
     Solution sol;
