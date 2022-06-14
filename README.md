@@ -5,7 +5,7 @@ Algorithm, Data Structure, Number Theory, C++ STL
 
 1. Competitive Programming 3
 2. Algorithm in Python
-3. Gide to Competitive Programming
+3. Guide to Competitive Programming
                
 **Online Resources**: 
 
