@@ -1,8 +1,8 @@
 pos = -1
 
-def linear_search(arr, n, target) ->int:
+def linear_search(arr: [list], n: int, target: int) ->int:
     global pos
-    
+
     for i in range(n):
         if (target == arr[i]):
             pos = i
