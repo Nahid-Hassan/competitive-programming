@@ -14,7 +14,7 @@ bool compare(int a, int b) {
      *  return a < b for ascending order. 
      *  return a > b for descending order.
      */
-    return a > b; 
+    return a < b; 
 }
 
 int main() {
